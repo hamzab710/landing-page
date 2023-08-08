@@ -37,12 +37,13 @@
 .lab {
     width: 400px;
     height: auto;
+    flex-shrink: 1;
 }
 
 .body {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+    justify-content: center;
+    gap: 50px;
 }
 
 .main {
@@ -56,10 +57,13 @@
 button {
     background-color: #3882f3;
     color: #f9faf8;
-    border: none;
+    box-sizing: border-box;
     padding: 8px 16px;
     border-radius: 5px;
     font-weight: 600;
+    font-size: 18px;
+    border-color: #f9faf8;
+    border-width: 3px;
 }
 
 a {
@@ -130,7 +134,28 @@ a {
     display: flex;
     width: 1000px;
     margin-top: 8px;
-    flex-flow: column wrap;
-    color: #f9faf8;
-    
+    color: #f9faf8;   
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.action {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+
+.click {
+    font-size: 20px;
+}
+
+/* end of section 4 */
+
+.footer {
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 18px;
 }
